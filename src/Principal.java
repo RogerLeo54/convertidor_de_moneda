@@ -20,12 +20,12 @@ public class Principal {
                 \n***************************************************
                 *** Sea bienvenido al Conversor de Monedas ***
                 
-                1) Peso Mexicano ==>> Dólar Estadounidense
-                2) Peso Mexicano ==>> Euro
-                3) Peso Mexicano ==>> Libra Esterlina
-                4) Dólar Estadounidense ==>> Peso Mexicano
-                5) Euro ==>> Peso Mexicano
-                6) Libra Esterlina ==>> Peso Mexicano
+                1) Dólar ==>> Peso argentino
+                2) Peso argentino ==>> Dólar
+                3) Dólar ==>> Real brasileño
+                4) Real brasileño ==>> Dólar
+                5) Dólar ==>> Peso colombiano
+                6) Peso colombiano ==>> Dólar
                 7) Otra opción de conversión
                 8) Salir
                 ***************************************************
@@ -50,8 +50,8 @@ public class Principal {
                 switch (opcionElegida) {
                     case 1, 2, 3, 4, 5, 6 -> {
                         String[][] opciones = {
-                                {"MXN", "USD"}, {"MXN", "EUR"}, {"MXN", "GBP"},
-                                {"USD", "MXN"}, {"EUR", "MXN"}, {"GBP", "MXN"}
+                                {"USD", "ARS"}, {"ARS", "USD"}, {"USD", "BRL"},
+                                {"BRL", "USD"}, {"USD", "COP"}, {"COP", "USD"}
                         };
                         String[] seleccion = opciones[opcionElegida - 1];
                         calculos.almacenarVariables(seleccion[0], seleccion[1]);
